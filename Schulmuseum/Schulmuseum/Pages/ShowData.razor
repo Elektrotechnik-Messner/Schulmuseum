@@ -1,0 +1,38 @@
+@page "/ShowData"
+
+@using DatabaseLibrary
+@using Schulmuseum.Models
+@using Microsoft.Extensions.Configuration
+
+@inject DataAccess Data
+@inject IConfiguration Config
+
+
+
+<h3>ShowData</h3>
+
+
+@if (_users == null)
+{
+   <h3>Loading.....</h3>
+}
+else
+{
+   @foreach (var user in _users)
+   {
+      <p>
+         @user.Username @user.Password
+      </p>
+   }
+}
+
+@code {
+   List<UserModel>? _users;
+   protected override async Task OnInitializedAsync()
+   {
+      // Sql command that gets send to the database
+      string sql = "select * from Users";
+      // Wait for the database to respond and show the loading... text in the mean time
+      _users = await Data.LoadData<UserModel, dynamic>(sql, new { }, Config.GetConnectionString("main"));
+   }
+}
