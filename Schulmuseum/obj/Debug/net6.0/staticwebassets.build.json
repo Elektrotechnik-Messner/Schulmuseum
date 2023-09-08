@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2tr7xciZDx5OpFp1qq+JAe7X4ZhlcrLkKipWnWE6C3Y=",
+  "Hash": "tU1C0MMb0ZbeecWNe1HzLr9hHDXX048pTdxq1/1RKmA=",
   "Source": "Schulmuseum",
   "BasePath": "_content/Schulmuseum",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Schulmuseum\\wwwroot",
       "Source": "Schulmuseum",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Schulmuseum.styles.css",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Schulmuseum.styles.css",
       "SourceId": "Schulmuseum",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "Schulmuseum.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Schulmuseum.styles.css"
+      "OriginalItemSpec": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Schulmuseum.styles.css"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Schulmuseum.bundle.scp.css",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Schulmuseum.bundle.scp.css",
       "SourceId": "Schulmuseum",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "Schulmuseum.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Schulmuseum.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Schulmuseum.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\css\\site.css",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\favicon.ico",
       "SourceId": "Schulmuseum",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\Coding\\C\\Schulmuseum\\Schulmuseum\\Schulmuseum\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\morit\\Documents\\Coding\\C#\\Schülermuseum\\Schulmuseum\\wwwroot\\",
       "BasePath": "_content/Schulmuseum",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
