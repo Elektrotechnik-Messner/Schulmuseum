@@ -3,18 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo bold">Logo</div>
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-        <button class="btn-spark">Buy now</button>
+      <div class="content">
+        <div class="logo"><span class="logo"></span><b>Logo</b></div>
+        <span class="navbtn">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+        <div class="contents">
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+          <button>Read Now</button>
+        </div>
       </div>
+    </nav>
+
+    <div class="container">
+      <div class="hero">
+        <h1 class="title">Blog</h1>
+        <div class="featured">
+          <div class="content">
+            <h2 class="title">Title</h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos fuga deleniti officia numquam totam, quo nostrum?
+            </p>
+            <button>Read Now</button>
+          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+            alt="Image"
+            class="image"
+          />
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag active">All</span>
+        <span class="tag">Category 1</span>
+        <span class="tag">Category 2</span>
+        <span class="tag">Category 3</span>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <img
+            src="https://images.unsplash.com/photo-1661051690325-d030d5b8aaec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
+            alt="Img"
+            class="post-image"
+          />
+          <div class="description">
+            <div>
+              <span class="small-tag bold">Category 1</span>
+              <h3 class="post-title">Title for the Post Article</h3>
+            </div>
+            <a href="#" class="read-now">Read now</a>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://images.unsplash.com/photo-1661051690325-d030d5b8aaec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
+            alt="Img"
+            class="post-image"
+          />
+          <div class="description">
+            <div>
+              <span class="small-tag bold">Category 1</span>
+              <h3 class="post-title">Title for the Post Article</h3>
+            </div>
+            <a href="#" class="read-now">Read now</a>
+          </div>
+        </div>
+        <div class="post">
+          <img
+            src="https://images.unsplash.com/photo-1661051690325-d030d5b8aaec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
+            alt="Img"
+            class="post-image"
+          />
+          <div class="description">
+            <div>
+              <span class="small-tag bold">Category 1</span>
+              <h3 class="post-title">Title for the Post Article</h3>
+            </div>
+            <a href="#" class="read-now">Read now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <div class="content">
+        <div class="logo inline-b">
+          <span class="logo"></span>
+          <h1>Logo</h1>
+        </div>
+        <div class="bottom-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Thing</a>
+        </div>
+        <div class="copyright">
+          <a href="#">Imprint</a>
+          <a href="#">Copyright</a>
+        </div>
+      </div>
+      <footer>Copyright &copy; Moritz Deiaco • Adrian Messner</footer>
     </nav>
 
     <script src="js/main.js"></script>

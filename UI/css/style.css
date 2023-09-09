@@ -25,6 +25,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+*.small {
+  font-size: 14px;
+  color: #666666;
+}
+
+body {
+  transition: background-color 600ms;
+}
 
 h1,
 h2,
@@ -43,8 +51,14 @@ i,
 .i {
   font-family: "SF-Pro-Regular-Italic";
 }
+i .scrolled,
+.italic .scrolled,
+.i .scrolled {
+  background-color: #ededed;
+}
 
 i.bold,
+b.italic,
 .bold.italic,
 h1.italic,
 h2.italic,
@@ -55,13 +69,85 @@ h6.italic {
   font-family: "SF-Pro-Bold-Italic";
 }
 
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.navbtn {
+  display: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbtn * {
+  height: 0.25rem;
+  background-color: #000000;
+  transition: width 200ms;
+}
+.navbtn .bar1 {
+  width: 75%;
+  transition: transform 200ms;
+}
+.navbtn .bar3 {
+  width: 75%;
+  margin-left: auto;
+  transition: transform 200ms;
+}
+.navbtn:hover {
+  cursor: pointer;
+}
+.navbtn:hover .bar1 {
+  width: 100%;
+}
+.navbtn:hover .bar3 {
+  width: 100%;
+}
+.navbtn.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbtn.active .bar2 {
+  display: none;
+}
+.navbtn.active .bar1 {
+  width: 100%;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.navbtn.active .bar3 {
+  width: 100%;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.inline-b {
+  display: inline-block !important;
+}
+
 a {
-  color: gray;
+  color: #666666;
   text-decoration: none;
   transition: color 200ms;
 }
 a:hover {
-  color: #404040;
+  color: #333333;
 }
 
 button {
@@ -81,12 +167,229 @@ button:active {
   background-color: #9723ea;
 }
 
-.spark {
-  position: absolute;
-  width: 30px;
-  height: 8px;
-  border-radius: 10px;
+.navbar {
+  height: 3.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000000;
+  background-color: #ffffff;
+  transition: box-shadow 600ms;
+}
+.navbar.shadow {
+  box-shadow: 0px 4px 9px 3px rgba(0, 0, 0, 0.2);
+}
+.navbar .content {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .content .logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.navbar .content .logo span.logo {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+}
+.navbar .content .contents {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar .content .contents .links {
+  gap: 3.5rem;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 5.5rem auto;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+span.logo {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+}
+
+.hero .featured {
+  display: flex;
+  position: relative;
+  margin: 1rem 0;
+  background-color: #e6e6e6;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+.hero .featured .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.hero .featured .content > * {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .featured .image {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+div.tags {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+div.tags .tag {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.2rem;
+  background-color: #e6e6e6;
+  border-radius: 1rem;
+  transition: background-color 600ms, color 600ms;
+}
+div.tags .tag:hover {
+  background-color: #bfbfbf;
+  cursor: pointer;
+}
+div.tags .tag.active {
   background-color: black;
-  transform: none;
-  /*   box-shadow: 1px 1px 5px 1px #ffffff; */
+  color: white;
+}
+div.tags .tag .tag-circle {
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--circle-color);
+  border-radius: 0.5rem;
+}
+div.tags .tag .name {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.posts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.post {
+  position: relative;
+}
+.post img {
+  width: 100%;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.post .description {
+  position: relative;
+  top: -1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 10rem;
+  background-color: #e6e6e6;
+  border-radius: 1rem;
+}
+.post .description div .small-tag {
+  background-color: #cccccc;
+  padding: 0.5rem;
+  font-size: 14px;
+  border-radius: calc((1rem + 14px) / 2);
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.post .description div .post-title {
+  margin-top: 0.8rem;
+}
+.post .description a {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+nav.bottom-nav {
+  width: 100%;
+  padding: 4rem;
+  padding-bottom: 2rem;
+  background-color: #f2f2f2;
+}
+nav.bottom-nav .content {
+  display: flex;
+  justify-content: space-between;
+}
+nav.bottom-nav .content div * {
+  display: block;
+  font-size: 1.5rem;
+}
+nav.bottom-nav .content div a {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+nav.bottom-nav .content div h1 {
+  font-size: 2.2rem;
+}
+
+footer {
+  color: #666666;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: calc(1000px + 2rem)) {
+  .container {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .navbtn {
+    display: block;
+  }
+  .navbar .content .contents {
+    display: none;
+  }
+  nav.bottom-nav .content {
+    display: block;
+  }
+  nav.bottom-nav .content div {
+    margin-top: 1rem;
+  }
+  footer {
+    display: block;
+  }
+  div.tags {
+    display: block;
+  }
+  div.tags .tag {
+    margin-bottom: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
