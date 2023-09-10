@@ -14,6 +14,28 @@
   font-family: "SF-Pro-Bold-Italic";
   src: url("../fonts/SF-Pro-Display-BoldItalic.otf") format("opentype");
 }
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #999999 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
 :root {
   font-size: 18px;
 }
@@ -174,7 +196,7 @@ button:active {
 
 .navbar {
   height: 3.5rem;
-  margin-right: 1rem;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -442,4 +464,4 @@ footer {
   div.tags .tag {
     margin-bottom: 0.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=min.css.map */

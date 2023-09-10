@@ -28,6 +28,28 @@ $slow-transition: 1.2s;
   src: url("../fonts/SF-Pro-Display-BoldItalic.otf") format("opentype");
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: darken($background, 40) $background;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $background;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darken($background, 40);
+  border-radius: 5px;
+  border: 2px solid darken($background, 0);
+}
+
 :root {
   font-size: 18px;
 }
@@ -184,7 +206,7 @@ button {
 }
 .navbar {
   height: 3.5rem;
-  margin-right: 1rem;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
