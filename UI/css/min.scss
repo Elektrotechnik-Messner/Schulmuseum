@@ -68,6 +68,9 @@ $slow-transition: 1.2s;
 
 body {
   transition: background-color $medium-transition;
+  &.scrolled {
+    background-color: darken($background, 7);
+  }
 }
 
 h1,
@@ -86,9 +89,6 @@ i,
 .italic,
 .i {
   font-family: "SF-Pro-Regular-Italic";
-  & .scrolled {
-    background-color: darken($background, 7);
-  }
 }
 
 i.bold,
@@ -406,6 +406,11 @@ nav.bottom-nav {
   & .content {
     display: flex;
     justify-content: space-between;
+    & div.logo-div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
     & div {
       & * {
         display: block;

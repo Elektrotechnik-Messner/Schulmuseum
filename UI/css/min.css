@@ -55,6 +55,9 @@
 body {
   transition: background-color 600ms;
 }
+body.scrolled {
+  background-color: #ededed;
+}
 
 h1,
 h2,
@@ -72,11 +75,6 @@ i,
 .italic,
 .i {
   font-family: "SF-Pro-Regular-Italic";
-}
-i .scrolled,
-.italic .scrolled,
-.i .scrolled {
-  background-color: #ededed;
 }
 
 i.bold,
@@ -201,7 +199,6 @@ button:active {
   align-items: center;
   justify-content: center;
   position: fixed;
-  -webkit-backface-visibility: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -379,6 +376,11 @@ nav.bottom-nav {
 nav.bottom-nav .content {
   display: flex;
   justify-content: space-between;
+}
+nav.bottom-nav .content div.logo-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 nav.bottom-nav .content div * {
   display: block;
