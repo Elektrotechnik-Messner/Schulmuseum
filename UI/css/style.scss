@@ -96,52 +96,59 @@ h4 {
 
 .navbtn {
   display: none;
-  height: 1.5rem;
-  width: 1.5rem;
-  padding: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  & * {
-    height: calc(1.5rem / 3 - 0.25rem);
-    background-color: $text;
-    transition: width $fast-transition;
-  }
-  & .bar1 {
-    width: 75%;
-    transition: transform $fast-transition;
-  }
-  & .bar3 {
-    width: 75%;
-    margin-left: auto;
-    transition: transform $fast-transition;
-  }
-  &:hover {
-    cursor: pointer;
+  & .navbtn-container {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & * {
+      height: calc(1.5rem / 3 - 0.25rem);
+      background-color: $text;
+      transition: width $fast-transition;
+    }
     & .bar1 {
-      width: 100%;
+      width: 75%;
+      transition: transform $fast-transition, width $fast-transition;
+    }
+    & .bar1,
+    & .bar2,
+    & .bar3 {
+      border-radius: calc((1.5rem / 3 - 0.25rem) / 2);
     }
     & .bar3 {
-      width: 100%;
+      width: 75%;
+      margin-left: auto;
+      transition: transform $fast-transition, width $fast-transition;
     }
-  }
-  &.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .bar2 {
-      display: none;
+    &:hover {
+      cursor: pointer;
+      & .bar1 {
+        width: 100%;
+      }
+      & .bar3 {
+        width: 100%;
+      }
     }
-    .bar1 {
-      width: 100%;
-      position: absolute;
-      transform: rotate(-45deg);
-    }
-    .bar3 {
-      width: 100%;
-      position: absolute;
-      transform: rotate(45deg);
+    &.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bar2 {
+        display: none;
+      }
+      .bar1 {
+        width: 100%;
+        position: absolute;
+        transform: rotate(-45deg);
+      }
+      .bar3 {
+        width: 100%;
+        position: absolute;
+        transform: rotate(45deg);
+      }
     }
   }
 }
@@ -161,7 +168,7 @@ a {
 
 button {
   padding: 0.7rem 1rem;
-  background-color: $text;
+  background-color: darken($background, 100);
   color: lighten($text, 100);
   border: none;
   border-radius: 0.4rem;
@@ -169,17 +176,15 @@ button {
   &:hover {
     cursor: pointer;
     /*     color: $text; */
-    background-color: $accent;
+    background-color: darken($background, 80);
   }
   &:active {
-    background-color: lighten($accent, 10);
+    background-color: darken($background, 60);
   }
 }
-
 .navbar {
   height: 3.5rem;
-  padding: 1rem;
-
+  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,6 +208,12 @@ button {
     align-items: center;
     justify-content: space-between;
 
+    & .bar {
+      padding: 1rem;
+      background-color: white;
+      padding-right: 0;
+    }
+
     & .logo {
       display: flex;
       gap: 0.5rem;
@@ -223,6 +234,7 @@ button {
     & .contents .links {
       gap: 3.5rem;
       display: flex;
+      align-items: center;
     }
   }
 }
@@ -340,7 +352,7 @@ div.tags {
     justify-content: space-between;
 
     padding: 1rem;
-    height: 10rem;
+    height: 9rem;
 
     background-color: darken($background, 10);
 
@@ -401,13 +413,59 @@ footer {
   }
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 720px) {
   .navbtn {
     display: block;
   }
 
-  .navbar .content .contents {
-    display: none;
+  .navbar {
+    height: auto;
+
+    & .content {
+      display: block;
+
+      & .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99999;
+        & > *,
+        & > * {
+          z-index: 99999;
+        }
+      }
+
+      & .contents {
+        display: block;
+        position: fixed;
+        top: -25rem;
+        left: 0;
+        z-index: 10;
+        padding: 1rem;
+        width: 100%;
+        background-color: white;
+
+        transition: top $fast-transition;
+
+        &.active {
+          top: 3.5rem;
+          background-color: white;
+          border-bottom: 1px solid lighten($text, $amount: 20);
+        }
+
+        & .links {
+          display: block;
+          & a {
+            display: block;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+          }
+          & button {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
   }
 
   nav.bottom-nav .content {

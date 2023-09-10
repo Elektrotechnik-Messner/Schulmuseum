@@ -19,9 +19,15 @@ document.addEventListener("scroll", (event) => {
 });
 
 btn = document.querySelector(".navbtn");
+container = document.querySelector(".navbtn .navbtn-container");
+contents = document.querySelector(".navbar .content .contents");
 
 btn.onclick = (event) => {
-  if (btn.classList.contains("active")) {
-    btn.classList.remove("active");
-  } else btn.classList.add("active");
+  if (container.classList.contains("active")) {
+    container.classList.remove("active");
+    contents.classList.remove("active");
+  } else {
+    container.classList.add("active");
+    contents.classList.add("active");
+  }
 };
